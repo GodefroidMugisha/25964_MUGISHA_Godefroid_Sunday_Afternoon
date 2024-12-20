@@ -1,12 +1,6 @@
 # 25964_MUGISHA_Godefroid_Sunday_Afternoon
 Object Oriented Program course assignment. 
-
-Here is the updated README file that includes information about the Car Rental System along with the exception handling program:
-
----
-
-# 25964_MUGISHA_Godefroid_Sunday_Afternoon  
-Object-Oriented Programming Course Assignment  
+---  
 
 ## Java OOP Exceptions and Car Rental System Assignment  
 
@@ -124,4 +118,4 @@ This program combines the demonstration of Java exception handling with a basic 
 
 --- 
 
-Let me know if you'd like further refinements!
+
