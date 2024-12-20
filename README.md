@@ -1,26 +1,58 @@
 # 25964_MUGISHA_Godefroid_Sunday_Afternoon
 Object Oriented Program course assignment. 
+
 ---  
 
-## Java OOP Exceptions and Car Rental System Assignment  
+## Java OOP Exceptions and Scenarios Assignment  
 
 ### Objective  
-This assignment demonstrates practical examples of exception handling in Java while integrating a Car Rental System. The goal is to understand how to simulate, trigger, and handle various checked and unchecked exceptions in Java programming, as well as to manage a basic car rental system with user interaction.
+This assignment demonstrates practical examples of exception handling in Java while integrating different systems. The goal is to understand how to simulate, trigger, and handle various checked and unchecked exceptions in Java programming across multiple scenarios.
 
 ---
 
 ## Structure  
 The program is implemented in a single Java file and includes:  
 1. Methods that simulate and handle different exceptions (both checked and unchecked).  
-2. A car rental management system with features to add rental entries while handling potential user input errors.
+2. Implementations for the following scenarios: 
+   - Car Rental System
+   - Online Shopping
+   - Online Betting
+   - Student Attendance List
+   - Traffic Fines System
 
 ---
 
-## Car Rental System Features  
+## Scenario Descriptions and Features  
+
+### 1. Car Rental System  
 The Car Rental System allows users to:  
-1. Add car rental entries, including car ID, model, and daily rental price.  
-2. Handle invalid inputs, such as non-numeric IDs or empty car model names, using exception handling mechanisms.  
-3. Use a menu-driven interface for ease of navigation.  
+- Add car rental entries, including car ID, model, and daily rental price.  
+- Handle invalid inputs, such as non-numeric IDs or empty car model names, using exception handling mechanisms.  
+- Use a menu-driven interface for ease of navigation.  
+
+### 2. Online Shopping  
+The Online Shopping system includes:  
+- Adding items to a cart with item ID, name, and price.  
+- Handling invalid input scenarios, such as entering negative prices or invalid item names, through exceptions.  
+- Simulating stock checks with potential for exceptions like `IllegalArgumentException` for out-of-stock items.  
+
+### 3. Online Betting  
+The Online Betting system covers:  
+- Placing bets with a specified amount and betting odds.  
+- Handling invalid bet amounts, such as negative numbers, using exception handling.  
+- Simulating results and catching potential errors, such as dividing by zero during payout calculations.  
+
+### 4. Student Attendance List  
+The Student Attendance List system supports:  
+- Recording student attendance with student ID and name.  
+- Handling duplicate entries and invalid data input through exception handling.  
+- Simulating file-based attendance records, including exceptions like `IOException` and `FileNotFoundException`.  
+
+### 5. Traffic Fines System  
+The Traffic Fines system includes:  
+- Adding traffic fine entries with vehicle registration number, fine amount, and violation type.  
+- Handling incorrect data, such as invalid registration numbers or negative fine amounts, with exceptions.  
+- Simulating database operations for fine retrievals and potential exceptions like `SQLException`.  
 
 ---
 
@@ -58,19 +90,19 @@ The Car Rental System allows users to:
 1. Copy the Java file into your preferred Java IDE or text editor.  
 2. Compile the program using the command:  
    ```
-   javac CarRentalSystem.java
+   javac ExceptionHandlingScenarios.java
    ```  
 3. Run the program using the command:  
    ```
-   java CarRentalSystem
+   java ExceptionHandlingScenarios
    ```  
-4. Use the menu to select different operations (add car rental entry, simulate checked/unchecked exceptions, or exit).  
+4. Use the menu to select different operations (e.g., add entries, simulate exceptions, or exit).  
 
 ---
 
 ## Key Features  
-- **Readability**: The program is well-documented with comments explaining each exception scenario and car rental system operation.  
-- **Modularity**: Separate methods are used for exception handling and the car rental system for better organization.  
+- **Readability**: The program is well-documented with comments explaining each exception scenario and system operation.  
+- **Modularity**: Separate methods are used for exception handling and each system for better organization.  
 - **Interactive Design**: A menu-driven approach enhances usability for users.  
 - **Real-life Simulation**: Exception scenarios mimic realistic situations for effective learning.  
 
@@ -91,31 +123,63 @@ The Car Rental System allows users to:
    IllegalArgumentException caught: Car model cannot be empty.
    ```  
 
-### Checked Exceptions:  
-- IOException caught: `nonexistentfile.txt (No such file or directory)`  
-- FileNotFoundException caught: `missingfile.txt (No such file or directory)`  
-- EOFException caught: `End of file reached`  
-- SQLException caught: `Table "NONEXISTENTTABLE" not found`  
-- ClassNotFoundException caught: `nonexistent.ClassName`  
+### Online Shopping:  
+- Valid item addition example:  
+   ```
+   Item added to cart successfully!
+   Item ID: 202
+   Item Name: Laptop
+   Price: $999.99
+   ```
+- Out-of-stock exception:  
+   ```
+   IllegalArgumentException caught: Item is out of stock.
+   ```
 
-### Unchecked Exceptions:  
-- ArithmeticException caught: `/ by zero`  
-- NullPointerException caught: `Cannot invoke "String.length()" because "str" is null`  
-- ArrayIndexOutOfBoundsException caught: `Index 10 out of bounds for length 5`  
-- ClassCastException caught: `class java.lang.Integer cannot be cast to class java.lang.String`  
-- IllegalArgumentException caught: `timeout value is negative`  
-- NumberFormatException caught: `For input string: "abc"`  
+### Online Betting:  
+- Valid bet example:  
+   ```
+   Bet placed successfully! Potential payout: $150.0
+   ```
+- Invalid bet amount:  
+   ```
+   IllegalArgumentException caught: Bet amount cannot be negative.
+   ```
+
+### Student Attendance List:  
+- Adding a student:  
+   ```
+   Attendance recorded successfully!
+   Student ID: 303
+   Student Name: John Doe
+   ```
+- Duplicate entry exception:  
+   ```
+   IllegalArgumentException caught: Student ID already exists.
+   ```
+
+### Traffic Fines System:  
+- Fine entry example:  
+   ```
+   Fine recorded successfully!
+   Vehicle Registration: RAB1234
+   Fine Amount: $50.0
+   Violation: Speeding
+   ```
+- Invalid fine amount:  
+   ```
+   IllegalArgumentException caught: Fine amount cannot be negative.
+   ```
 
 ---
 
 ## Conclusion  
-This program combines the demonstration of Java exception handling with a basic Car Rental System, providing both practical and real-world examples of handling errors gracefully. It equips learners with the skills needed to anticipate and manage exceptions effectively in software applications.
+This program combines the demonstration of Java exception handling with multiple real-world scenarios, providing practical examples of handling errors gracefully. It equips learners with the skills needed to anticipate and manage exceptions effectively in software applications.
 
 ---
 
 **Author:** MUGISHA Godefroid  
 **ID:** 25964  
 
---- 
-
+---
 
